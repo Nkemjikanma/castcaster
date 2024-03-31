@@ -5,11 +5,6 @@ import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const viewPort = {
-    width: "device-width",
-    initialScale: 1.0,
-};
-
 export const metadata: Metadata = {
     title: "Castcaster",
     description: "Generate casts like users do on warpcaster",
