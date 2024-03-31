@@ -27,7 +27,6 @@ export default function Form() {
                 className="relative flex w-full flex-col items-center justify-center gap-2"
                 onSubmit={(e) => {
                     e.preventDefault();
-                    // generateCast(e);
                 }}
             >
                 <input
@@ -39,7 +38,7 @@ export default function Form() {
                     required
                     disabled={isSearching}
                     value={query}
-                    onChange={(e) => setQuery(e.target.value)}
+                    onChange={(e) => setQuery(e.target.value.toLowerCase())}
                     title="input"
                 />
                 <button

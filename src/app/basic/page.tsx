@@ -1,12 +1,27 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Fragment } from "react";
 
 export const metadata: Metadata = {
     title: "Castcaster",
     description: "Generate casts like users do on warpcaster",
+    keywords: [
+        "castcaster",
+        "warpcaster",
+        "cast",
+        "generate",
+        "base",
+        "ethereum",
+    ],
     openGraph: {
         title: "Castcaster",
         description: "Generate casts like users do on warpcaster",
+        siteName: "Castcaster",
+        url: "https://castcaster.vercel.app/",
+        locale: "en_US",
         images: [`${process.env.NEXT_PUBLIC_HOST_URL}/castcaster.png`],
+    },
+    twitter: {
+        site: "@nkemjikanma",
     },
     other: {
         "fc:frame": "vNext",
@@ -14,10 +29,14 @@ export const metadata: Metadata = {
     },
 };
 
+export const viewport: Viewport = {
+    themeColor: "#141414",
+    colorScheme: "dark",
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+};
+
 export default function Page() {
-    return (
-        <div>
-            <h1>Basic Frame</h1>
-        </div>
-    );
+    return <Fragment></Fragment>;
 }
