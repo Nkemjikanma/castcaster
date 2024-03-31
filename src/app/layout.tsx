@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Form from "@/components/Form";
 import type { Metadata } from "next";
+import { Html, Head, Main, NextScript } from "next/document";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,18 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <Head>
+                <meta property="og:title" content={`Castcaster`} />
+                <meta
+                    property="og:image"
+                    content={`${process.env.NEXT_PUBLIC_HOST_URL}/castcaster.png`}
+                />
+                <meta property="fc:frame" content="vNext" />
+                <meta
+                    property="fc:frame:image"
+                    content={`${process.env.NEXT_PUBLIC_HOST_URL}/castcaster.png`}
+                />
+            </Head>
             <body className={inter.className}>
                 <main className="min-h-screenpx-5 bg-body relative isolate flex min-h-screen w-screen items-center justify-center">
                     <div className="flex min-w-96 flex-col items-center justify-center">
