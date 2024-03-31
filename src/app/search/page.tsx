@@ -69,7 +69,7 @@ export default async function SearchResultPage({
             {
                 role: "system",
                 content:
-                    "You are supplied sentencess and these sentenses respresent casts by users on a platform called Warpcaster. You can think of casts as tweets on twitter. Using this list of supplied casts, generate a cast that most closely matches the style of writing in the provided casts but with a humourous twist. Stick to topics covered in the provided casts. This generated cast should have a maximum of 140 characters.",
+                    "Generate a humorous cast in the style of short user-generated posts on Warpcaster. 'Casts' are brief messages. Given the topics covered in the supplied casts, create a witty twist with a max length of 140 characters. Please aim for a lighthearted, playful tone. Examples of covered topics: gaming frustrations, tech mishaps, and daily life anecdotes.",
             },
             {
                 role: "user",

@@ -18,14 +18,14 @@ export const metadata: Metadata = {
         siteName: "Castcaster",
         url: "https://castcaster.vercel.app/",
         locale: "en_US",
-        images: [`${process.env.NEXT_PUBLIC_HOST_URL}/public/castcaster.png`],
+        images: ["https://castcaster.vercel.app/public/castcaster.png"],
     },
     twitter: {
         site: "@nkemjikanma",
     },
     other: {
         "fc:frame": "vNext",
-        "fc:frame:image": `${process.env.NEXT_PUBLIC_HOST_URL}/public/castcaster.png`,
+        "fc:frame:image": "https://castcaster.vercel.app/public/castcaster.png",
     },
 };
 
