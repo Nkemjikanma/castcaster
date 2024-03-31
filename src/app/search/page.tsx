@@ -1,6 +1,7 @@
 import { NeynarAPIClient } from "@neynar/nodejs-sdk";
 import { formatCasts, open } from "@/utils/utils";
 import { redirect } from "next/navigation";
+import { Suspense } from "react";
 
 interface SearchParamsType {
     searchParams: {
@@ -79,9 +80,13 @@ export default async function SearchResultPage({
     });
 
     return (
-        <div className="mt-5 bg-blend-darken shadow-md">
-            <h1 className="text-lg font-bold">{getFId?.userName ?? query}:</h1>
-            <p className="mt-2">{openAi.choices[0].message.content}</p>
-        </div>
+        <Suspense>
+            <div className="mt-5 bg-blend-darken shadow-md">
+                <h1 className="text-lg font-bold">
+                    {getFId?.userName ?? query}:
+                </h1>
+                <p className="mt-2">{openAi.choices[0].message.content}</p>
+            </div>
+        </Suspense>
     );
 }
