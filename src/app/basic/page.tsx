@@ -38,5 +38,5 @@ export const viewport: Viewport = {
 };
 
 export default function Page() {
-    return <Fragment></Fragment>;
+    return <h1>Basic Frame</h1>;
 }
