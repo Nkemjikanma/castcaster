@@ -1,5 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Fragment } from "react";
+import { getFrameMetadata } from "@coinbase/onchainkit/frame";
+
+const frameMetadata = getFrameMetadata({
+    buttons: [
+        {
+            label: "Start",
+        },
+    ],
+    image: {
+        src: "https://castcaster.vercel.app/public/castcaster.png",
+    },
+    postUrl: "https://castcaster.vercel.app/api/cast",
+});
 
 export const metadata: Metadata = {
     title: "Castcaster",
@@ -24,8 +36,7 @@ export const metadata: Metadata = {
         site: "@nkemjikanma",
     },
     other: {
-        "fc:frame": "vNext",
-        "fc:frame:image": "https://castcaster.vercel.app/public/castcaster.png",
+        ...frameMetadata,
     },
 };
 
