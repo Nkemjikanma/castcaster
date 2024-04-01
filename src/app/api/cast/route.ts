@@ -2,7 +2,7 @@ import NextCors from "nextjs-cors";
 import { redirect } from "next/navigation";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export async function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
     await NextCors(req, res, {
         methods: ["GET", "POST"],
         origin: "*",
