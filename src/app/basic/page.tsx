@@ -8,7 +8,7 @@ const frameMetadata = getFrameMetadata({
         },
     ],
     image: {
-        src: "https://castcaster.vercel.app/public/castcaster.png",
+        src: "https://castcaster.vercel.app/castcaster.png",
     },
     postUrl: "https://castcaster.vercel.app/api/cast",
 });
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         siteName: "Castcaster",
         url: "https://castcaster.vercel.app/",
         locale: "en_US",
-        images: ["https://castcaster.vercel.app/public/castcaster.png"],
+        images: ["https://castcaster.vercel.app/castcaster.png"],
     },
     twitter: {
         site: "@nkemjikanma",
