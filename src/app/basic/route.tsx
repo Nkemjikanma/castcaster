@@ -17,7 +17,7 @@ export async function GET(request: Request) {
         // ?description=
         const hasDescription = searchParams.has("description");
         const description = hasDescription
-            ? searchParams.get("description")?.slice(0, 100)
+            ? searchParams.get("description")
             : "Generate casts like users of warpcaster";
 
         return new ImageResponse(
@@ -31,36 +31,31 @@ export async function GET(request: Request) {
                         justifyContent: "center",
                         flexDirection: "column",
                         backgroundImage:
-                            "linear-gradient(to bottom, #dbf4ff, #fff1f1)",
+                            "linear-gradient(to bottom,  #000000, #2D3436)",
                         fontSize: 80,
                         fontWeight: 700,
                         textAlign: "center",
                     }}
                 >
-                    <p
+                    <h3
                         style={{
-                            backgroundImage:
-                                "linear-gradient(90deg, rgb(0, 124, 240), rgb(0, 223, 216))",
-                            backgroundClip: "text",
-                            color: "transparent",
-                            fontSize: 80,
-                            fontWeight: 700,
+                            color: "white",
+                            fontSize: 60,
+                            fontWeight: 900,
                             margin: 0,
+                            letterSpacing: 1,
                         }}
                     >
                         {title}
-                    </p>
+                    </h3>
                     {description && (
                         <p
                             style={{
-                                backgroundImage:
-                                    "linear-gradient(90deg, rgb(121, 40, 202), rgb(255, 0, 128))",
-                                backgroundClip: "text",
-                                color: "transparent",
-                                fontSize: 80,
-                                fontWeight: 700,
+                                fontSize: 30,
+                                fontWeight: 300,
                                 margin: 0,
-                                marginTop: 20,
+                                marginTop: 30,
+                                color: "white",
                             }}
                         >
                             {description}
