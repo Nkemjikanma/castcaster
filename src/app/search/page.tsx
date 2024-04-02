@@ -27,8 +27,6 @@ export default async function SearchResultPage({
         console.error(error);
     }
 
-    // openaibabyyy
-
     const aiResponse =
         typeof castsForAi !== "string"
             ? await openAi(formatCasts(castsForAi))

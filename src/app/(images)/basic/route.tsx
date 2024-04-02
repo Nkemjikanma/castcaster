@@ -24,6 +24,7 @@ export async function GET(request: Request) {
             (
                 <div
                     style={{
+                        position: "relative",
                         display: "flex",
                         height: "100%",
                         width: "100%",
@@ -32,7 +33,6 @@ export async function GET(request: Request) {
                         flexDirection: "column",
                         backgroundImage:
                             "linear-gradient(to bottom,  #310047, #660094)",
-                        fontSize: 80,
                         fontWeight: 700,
                         textAlign: "center",
                     }}
@@ -48,9 +48,10 @@ export async function GET(request: Request) {
                     >
                         {title}
                     </h3>
-                    {description && (
+                    {hasDescription && (
                         <p
                             style={{
+                                position: "relative",
                                 fontSize: 30,
                                 fontWeight: 300,
                                 margin: 0,

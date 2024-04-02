@@ -5,6 +5,7 @@ import { formatCasts, getCasts, openAi, retrieveFId } from "@/utils/utils";
 export async function POST(req: NextRequest): Promise<NextResponse> {
     const body: FrameRequest = await req.json();
     const { untrustedData } = body;
+    const fid = untrustedData.fid;
 
     if (!untrustedData.inputText) {
         const searchParams = new URLSearchParams({
@@ -64,20 +65,21 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const searchParams = new URLSearchParams({
         title: getFid.userName,
         description: aiResponse.choices[0].message.content as string,
+        displayName: getFid.displayName,
     });
 
     return new NextResponse(
         getFrameHtmlResponse({
             image: {
-                src: `https://castcaster.vercel.app/basic?${searchParams}`,
+                src: `https://castcaster.vercel.app/display?${searchParams}`,
             },
             buttons: [
                 {
-                    label: "Another cast",
-                    action: "post_redirect",
+                    label: "Share cast",
+                    action: "link",
+                    target: `https://warpcast.com/~/compose?text=${encodeURIComponent(`Here is what @${getFid.userName} is likely to say.`)}&embeds[]=${encodeURIComponent(`https://castcaster.vercel.app/share/${searchParams}`)}`,
                 },
             ],
-            postUrl: "https://castcaster.vercel.app/",
         }),
     );
 }

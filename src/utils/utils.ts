@@ -15,6 +15,7 @@ export const retrieveFId = async (query: string) => {
     return await client.lookupUserByUsername(query).then((result) => {
         return {
             id: result.result.user.fid,
+            displayName: result.result.user.displayName,
             userName: query,
         };
     });
