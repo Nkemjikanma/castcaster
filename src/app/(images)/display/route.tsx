@@ -60,13 +60,13 @@ export async function GET(request: Request) {
                     >
                         <div
                             style={{
-                                display: "flex",
-                                flexDirection: "row",
-                                gap: "3px",
+                                width: "100%",
                             }}
                         >
-                            <p style={{ color: "white" }}>{displayName}</p>
-                            <p style={{ color: "gray" }}>@{title}</p>
+                            <p style={{ color: "white" }}>
+                                {displayName}
+                                <span style={{ color: "gray" }}>@{title}</span>
+                            </p>
                         </div>
                         <div
                             style={{
