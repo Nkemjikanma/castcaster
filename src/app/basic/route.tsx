@@ -56,9 +56,7 @@ export async function GET(request: Request) {
                                 margin: 0,
                                 marginTop: 30,
                                 color: "white",
-                                width: "80%",
-                                // textAlign: "center",
-                                justifyContent: description,
+                                maxWidth: "80%",
                             }}
                         >
                             {description}
