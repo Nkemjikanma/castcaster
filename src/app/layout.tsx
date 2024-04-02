@@ -12,7 +12,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <main className="min-h-screenpx-5 bg-body relative isolate flex min-h-screen w-screen items-center justify-center">
+                {/* <main className="min-h-screenpx-5 bg-body relative isolate flex min-h-screen w-screen items-center justify-center">
                     <div className="flex min-w-96 flex-col items-center justify-center">
                         <h1 className="mb-2 text-4xl font-bold tracking-tight">
                             Castcaster
@@ -23,11 +23,11 @@ export default function RootLayout({
                         </p>
 
                         <div className="relative mt-5 flex w-80 flex-col items-center">
-                            <Form />
-                            {children}
-                        </div>
+                            <Form /> */}
+                {children}
+                {/* </div>
                     </div>
-                </main>
+                </main> */}
             </body>
         </html>
     );
