@@ -16,9 +16,7 @@ export async function GET(request: Request) {
 
         // ?description=
         const hasDescription = searchParams.has("description");
-        const description = hasDescription
-            ? searchParams.get("description")
-            : "Generate casts like users of warpcaster";
+        const description = searchParams.get("description");
 
         const descriptionPostion = hasDescription ? undefined : "center";
 
@@ -59,7 +57,7 @@ export async function GET(request: Request) {
                                 marginTop: 30,
                                 color: "white",
                                 width: "80%",
-                                justifyItems: descriptionPostion,
+                                justifyContent: descriptionPostion,
                             }}
                         >
                             {description}
