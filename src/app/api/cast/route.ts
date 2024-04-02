@@ -2,10 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { FrameRequest, getFrameHtmlResponse } from "@coinbase/onchainkit/frame";
 import { formatCasts, getCasts, openAi, retrieveFId } from "@/utils/utils";
 
-export async function POST(
-    req: NextRequest,
-    res: NextResponse,
-): Promise<NextResponse> {
+export async function POST(req: NextRequest): Promise<NextResponse> {
     const body: FrameRequest = await req.json();
     const { untrustedData } = body;
 
@@ -77,6 +74,7 @@ export async function POST(
             buttons: [
                 {
                     label: "Another cast",
+                    action: "post_redirect",
                 },
             ],
             postUrl: "https://castcaster.vercel.app/",

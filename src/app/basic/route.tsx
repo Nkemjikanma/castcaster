@@ -31,7 +31,7 @@ export async function GET(request: Request) {
                         justifyContent: "center",
                         flexDirection: "column",
                         backgroundImage:
-                            "linear-gradient(to bottom,  #000000, #2D3436)",
+                            "linear-gradient(to bottom,  #310047, #660094)",
                         fontSize: 80,
                         fontWeight: 700,
                         textAlign: "center",
@@ -56,6 +56,7 @@ export async function GET(request: Request) {
                                 margin: 0,
                                 marginTop: 30,
                                 color: "white",
+                                width: "80%",
                             }}
                         >
                             {description}
