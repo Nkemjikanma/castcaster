@@ -20,6 +20,8 @@ export async function GET(request: Request) {
             ? searchParams.get("description")
             : "Generate casts like users of warpcaster";
 
+        const descriptionPostion = hasDescription ? undefined : "center";
+
         return new ImageResponse(
             (
                 <div
@@ -57,6 +59,7 @@ export async function GET(request: Request) {
                                 marginTop: 30,
                                 color: "white",
                                 width: "80%",
+                                justifyItems: descriptionPostion,
                             }}
                         >
                             {description}
