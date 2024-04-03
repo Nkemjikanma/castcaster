@@ -61,7 +61,7 @@ export async function GET(request: Request) {
                     <div
                         style={{
                             display: "flex",
-                            width: "90%",
+                            width: "80%",
                             height: "100%",
                             margin: "0",
                             position: "relative",
@@ -72,18 +72,18 @@ export async function GET(request: Request) {
                             style={{
                                 color: "white",
                                 fontWeight: "500",
-                                fontSize: "52px",
+                                fontSize: "42px",
                             }}
                         >
                             {displayName}
-                            <span style={{ color: "gray", marginLeft: "5p" }}>
+                            <span style={{ color: "gray", marginLeft: "5px" }}>
                                 @{title}
                             </span>
                         </p>
                         <p
                             style={{
                                 position: "relative",
-                                fontSize: "50px",
+                                fontSize: "40px",
                             }}
                         >
                             {description}
