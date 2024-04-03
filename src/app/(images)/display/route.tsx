@@ -24,6 +24,7 @@ export async function GET(request: Request) {
                         display: "flex",
                         msFlexDirection: "row",
                         WebkitFlexDirection: "row",
+                        gap: "8px",
                         height: "100%",
                         width: "100%",
                         alignItems: "center",
@@ -31,55 +32,60 @@ export async function GET(request: Request) {
                         flexDirection: "column",
                         backgroundImage:
                             "linear-gradient(to bottom,  #310047, #660094)",
-                        fontWeight: 700,
-                        textAlign: "center",
-                        padding: "0 10px 0 10px",
                     }}
                 >
+                    {/* Profile pciture wrapper logo*/}
                     <div
                         style={{
-                            width: "10%",
+                            width: "fit",
+                            height: "100%",
                             display: "flex",
-                        }}
-                    >
-                        <div
-                            style={{
-                                display: "flex",
-                                borderRadius: "50%",
-                                width: "20px",
-                                height: "20px",
-                            }}
-                        ></div>
-                    </div>
-                    <div
-                        style={{
-                            width: "90%",
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
                             position: "relative",
                         }}
                     >
-                        <div
-                            style={{
-                                width: "100%",
-                                display: "flex",
-                            }}
-                        >
-                            <p style={{ color: "white" }}>
-                                {displayName}
-                                <span style={{ color: "gray" }}>@{title}</span>
-                            </p>
-                        </div>
+                        {/* Profile picture */}
                         <div
                             style={{
                                 position: "relative",
-                                justifyItems: "left",
                                 display: "flex",
+                                borderRadius: "50%",
+                                width: "70px",
+                                height: "70px",
+                                backgroundColor: "orange",
+                            }}
+                        ></div>
+                    </div>
+
+                    {/*Body wrapper*/}
+                    <div
+                        style={{
+                            display: "flex",
+                            width: "80%",
+                            height: "100%",
+                            margin: "0",
+                            position: "relative",
+                        }}
+                    >
+                        <p
+                            style={{
+                                color: "white",
+                                fontWeight: "500",
+                                fontSize: "22px",
+                            }}
+                        >
+                            {displayName}
+                            <span style={{ color: "gray", marginLeft: "5p" }}>
+                                @{title}
+                            </span>
+                        </p>
+                        <p
+                            style={{
+                                position: "relative",
+                                fontSize: "20px",
                             }}
                         >
                             {description}
-                        </div>
+                        </p>
                     </div>
                 </div>
             ),
