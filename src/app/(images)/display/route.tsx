@@ -39,10 +39,12 @@ export async function GET(request: Request) {
                     <div
                         style={{
                             width: "10%",
+                            display: "flex",
                         }}
                     >
                         <div
                             style={{
+                                display: "flex",
                                 borderRadius: "50%",
                                 width: "20px",
                                 height: "20px",
@@ -61,6 +63,7 @@ export async function GET(request: Request) {
                         <div
                             style={{
                                 width: "100%",
+                                display: "flex",
                             }}
                         >
                             <p style={{ color: "white" }}>
@@ -72,6 +75,7 @@ export async function GET(request: Request) {
                             style={{
                                 position: "relative",
                                 justifyItems: "left",
+                                display: "flex",
                             }}
                         >
                             {description}
@@ -91,30 +95,3 @@ export async function GET(request: Request) {
         });
     }
 }
-
-// <h3
-//     style={{
-//         color: "white",
-//         fontSize: 60,
-//         fontWeight: 900,
-//         margin: 0,
-//         letterSpacing: 1,
-//     }}
-// >
-//     {title}
-// </h3>
-
-// <p
-//     style={{
-//         position: "relative",
-//         fontSize: 30,
-//         fontWeight: 300,
-//         margin: 0,
-//         marginTop: 30,
-//         color: "white",
-//         maxWidth: "80%",
-//         textAlign: "center",
-//     }}
-// >
-//     {description}
-// </p>
