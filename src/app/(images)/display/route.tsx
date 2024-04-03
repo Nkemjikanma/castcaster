@@ -27,11 +27,11 @@ export async function GET(request: Request) {
                         gap: "8px",
                         height: "100%",
                         width: "100%",
-                        // alignItems: "center",
+                        alignItems: "center",
                         justifyContent: "center",
-                        flexDirection: "column",
                         backgroundImage:
                             "linear-gradient(to bottom,  #16101E, #1F162B)",
+                        padding: "5px 10px",
                     }}
                 >
                     {/* Profile pciture wrapper logo*/}
@@ -76,7 +76,7 @@ export async function GET(request: Request) {
                             }}
                         >
                             {displayName}
-                            <span style={{ color: "gray", marginLeft: "5px" }}>
+                            <span style={{ color: "gray", marginLeft: "8px" }}>
                                 @{title}
                             </span>
                         </p>
@@ -84,6 +84,7 @@ export async function GET(request: Request) {
                             style={{
                                 position: "relative",
                                 fontSize: "40px",
+                                color: "white",
                             }}
                         >
                             {description}
