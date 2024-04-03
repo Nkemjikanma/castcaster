@@ -52,6 +52,7 @@ export async function GET(request: Request) {
                                 width: "70px",
                                 height: "70px",
                                 backgroundColor: "orange",
+                                border: "2px solid white",
                             }}
                         ></div>
                     </div>
@@ -64,13 +65,14 @@ export async function GET(request: Request) {
                             height: "100%",
                             margin: "0",
                             position: "relative",
+                            flexDirection: "column",
                         }}
                     >
                         <p
                             style={{
                                 color: "white",
                                 fontWeight: "500",
-                                fontSize: "22px",
+                                fontSize: "52px",
                             }}
                         >
                             {displayName}
@@ -81,7 +83,7 @@ export async function GET(request: Request) {
                         <p
                             style={{
                                 position: "relative",
-                                fontSize: "20px",
+                                fontSize: "50px",
                             }}
                         >
                             {description}
