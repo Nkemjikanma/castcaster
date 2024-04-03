@@ -27,11 +27,11 @@ export async function GET(request: Request) {
                         gap: "8px",
                         height: "100%",
                         width: "100%",
-                        alignItems: "center",
+                        // alignItems: "center",
                         justifyContent: "center",
                         flexDirection: "column",
                         backgroundImage:
-                            "linear-gradient(to bottom,  #310047, #660094)",
+                            "linear-gradient(to bottom,  #16101E, #1F162B)",
                     }}
                 >
                     {/* Profile pciture wrapper logo*/}
