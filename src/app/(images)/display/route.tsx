@@ -25,7 +25,7 @@ export async function GET(request: Request) {
                         height: "100%",
                         width: "100%",
                         backgroundImage:
-                            "linear-gradient(to bottom,  #16101E, #1F162B)",
+                            "linear-gradient(to bottom, #16101E, #1F162B)",
                         padding: "30px",
                         margin: "0",
                         justifyContent: "center",
@@ -40,8 +40,6 @@ export async function GET(request: Request) {
                             gap: "3px",
                             height: "100%",
                             width: "100%",
-                            backgroundImage:
-                                "linear-gradient(to bottom,  #16101E, #1F162B)",
                             padding: "5px 10px",
                             margin: "0",
                             boxSizing: "border-box",
