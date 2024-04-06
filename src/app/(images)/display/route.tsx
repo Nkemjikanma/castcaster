@@ -26,8 +26,6 @@ export async function GET(request: Request) {
                         gap: "3px",
                         height: "100%",
                         width: "100%",
-                        alignItems: "center",
-                        justifyContent: "center",
                         backgroundImage:
                             "linear-gradient(to bottom,  #16101E, #1F162B)",
                         padding: "5px 10px",
@@ -39,7 +37,6 @@ export async function GET(request: Request) {
                     <div
                         style={{
                             width: "10%",
-                            height: "100%",
                             display: "flex",
                             position: "relative",
                         }}
@@ -63,28 +60,33 @@ export async function GET(request: Request) {
                         style={{
                             display: "flex",
                             width: "80%",
-                            height: "100%",
-                            margin: "0",
                             position: "relative",
                             flexDirection: "column",
                         }}
                     >
                         <p
                             style={{
+                                position: "relative",
                                 color: "white",
                                 fontWeight: "500",
                                 fontSize: "42px",
                             }}
                         >
                             {displayName}
-                            <span style={{ color: "gray", marginLeft: "8px" }}>
+                            <span
+                                style={{
+                                    color: "gray",
+                                    position: "relative",
+                                }}
+                            >
+                                {" "}
                                 @{title}
                             </span>
                         </p>
                         <p
                             style={{
                                 position: "relative",
-                                fontSize: "40px",
+                                fontSize: "38px",
                                 color: "white",
                             }}
                         >
