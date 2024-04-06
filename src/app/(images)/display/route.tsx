@@ -37,7 +37,7 @@ export async function GET(request: Request) {
                     {/* Profile pciture wrapper logo*/}
                     <div
                         style={{
-                            width: "fit-content",
+                            width: "auto",
                             display: "flex",
                             position: "relative",
                             border: "2px solid yellow",
@@ -62,7 +62,7 @@ export async function GET(request: Request) {
                         style={{
                             display: "flex",
                             width: "auto",
-                            height: "max-content",
+                            height: "auto",
                             position: "relative",
                             flexDirection: "column",
                             border: "2px solid blue",
