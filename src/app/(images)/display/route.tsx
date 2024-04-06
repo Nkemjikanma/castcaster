@@ -45,17 +45,15 @@ export async function GET(request: Request) {
                             padding: "5px 10px",
                             margin: "0",
                             boxSizing: "border-box",
-                            border: "2px solid green",
                         }}
                     >
-                        {" "}
                         {/* Profile pciture wrapper logo*/}
                         <div
                             style={{
                                 width: "auto",
                                 display: "flex",
                                 position: "relative",
-                                border: "2px solid yellow",
+                                marginRight: "6px",
                             }}
                         >
                             {/* Profile picture */}
@@ -68,7 +66,7 @@ export async function GET(request: Request) {
                                     height: "120px",
                                     backgroundColor: "orange",
                                     border: "1px solid white",
-                                    marginTop: "70px",
+                                    marginTop: "140px",
                                 }}
                             ></div>
                         </div>
@@ -80,7 +78,6 @@ export async function GET(request: Request) {
                                 height: "auto",
                                 position: "relative",
                                 flexDirection: "column",
-                                border: "2px solid blue",
                                 margin: "0",
                                 justifyContent: "center",
                             }}
@@ -98,6 +95,7 @@ export async function GET(request: Request) {
                                     style={{
                                         color: "gray",
                                         position: "relative",
+                                        marginLeft: "8px",
                                     }}
                                 >
                                     @{title}
