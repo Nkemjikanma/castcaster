@@ -31,6 +31,7 @@ export async function GET(request: Request) {
                         padding: "5px 10px",
                         margin: "0",
                         boxSizing: "border-box",
+                        border: "2px solid green",
                     }}
                 >
                     {/* Profile pciture wrapper logo*/}
@@ -39,6 +40,7 @@ export async function GET(request: Request) {
                             width: "10%",
                             display: "flex",
                             position: "relative",
+                            border: "2px solid yellow",
                         }}
                     >
                         {/* Profile picture */}
@@ -62,6 +64,7 @@ export async function GET(request: Request) {
                             width: "80%",
                             position: "relative",
                             flexDirection: "column",
+                            border: "2px solid blue",
                         }}
                     >
                         <p
