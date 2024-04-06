@@ -28,6 +28,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 },
                 postUrl: "https://castcaster.vercel.app/api/cast",
             }),
+            {
+                status: 200,
+                headers: {
+                    "Content-Type": "text/html",
+                    "Cache-Control": "public, max-age=0, must-revalidate",
+                },
+            },
         );
     }
 
@@ -55,6 +62,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 },
                 postUrl: "https://castcaster.vercel.app/api/cast",
             }),
+            {
+                status: 200,
+                headers: {
+                    "Content-Type": "text/html",
+                    "Cache-Control": "public, max-age=0, must-revalidate",
+                },
+            },
         );
     }
 
@@ -81,5 +95,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 },
             ],
         }),
+        {
+            status: 200,
+            headers: {
+                "Content-Type": "text/html",
+                "Cache-Control": "public, max-age=0, must-revalidate",
+            },
+        },
     );
 }
+
+export const dynamic = "force-dynamic";
