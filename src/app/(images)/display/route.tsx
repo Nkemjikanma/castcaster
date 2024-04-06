@@ -113,6 +113,27 @@ export async function GET(request: Request) {
                             </p>
                         </div>
                     </div>
+                    <div
+                        style={{
+                            display: "flex",
+                            position: "absolute",
+                            left: 0,
+                            bottom: 0,
+                            background: "gray",
+                            borderTop: "4px solid",
+                            borderRight: "4px solid",
+                            borderColor: "gray",
+                            borderTopRightRadius: "16px",
+                            paddingLeft: "16px",
+                            paddingRight: "16px",
+                            paddingBottom: "12px",
+                            paddingTop: "12px",
+                            color: "gray",
+                            fontSize: "28px",
+                        }}
+                    >
+                        {displayName}&apos;s generated cast
+                    </div>
                 </div>
             ),
             {

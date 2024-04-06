@@ -91,7 +91,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 {
                     label: "Share cast",
                     action: "link",
-                    target: `https://warpcast.com/~/compose?text=${encodeURIComponent(`Here is what @${getFid.userName} is likely to say.`)}&embeds[]=${encodeURIComponent(`https://castcaster.vercel.app/share/${searchParams}`)}`,
+                    target: `https://warpcast.com/~/compose?text=${encodeURIComponent(`Here is a generated tweet for @${getFid.userName}`)}&embeds[]=${encodeURIComponent(`https://castcaster.vercel.app/share/${searchParams}`)}`,
                 },
             ],
         }),
