@@ -107,6 +107,8 @@ export async function GET(request: Request) {
                                     fontSize: "36px",
                                     color: "white",
                                     whiteSpace: "pre-line",
+                                    wordWrap: "break-word",
+                                    wordBreak: "break-word",
                                 }}
                             >
                                 {description}
@@ -128,7 +130,7 @@ export async function GET(request: Request) {
                             paddingRight: "16px",
                             paddingBottom: "12px",
                             paddingTop: "12px",
-                            color: "gray",
+                            color: "white",
                             fontSize: "28px",
                         }}
                     >
