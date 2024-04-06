@@ -64,10 +64,11 @@ export async function GET(request: Request) {
                                     position: "relative",
                                     display: "flex",
                                     borderRadius: "50%",
-                                    width: "150px",
-                                    height: "150px",
+                                    width: "120px",
+                                    height: "120px",
                                     backgroundColor: "orange",
                                     border: "1px solid white",
+                                    marginTop: "70px",
                                 }}
                             ></div>
                         </div>
@@ -81,6 +82,7 @@ export async function GET(request: Request) {
                                 flexDirection: "column",
                                 border: "2px solid blue",
                                 margin: "0",
+                                alignItems: "center",
                             }}
                         >
                             <p
@@ -88,7 +90,7 @@ export async function GET(request: Request) {
                                     position: "relative",
                                     color: "white",
                                     fontWeight: "500",
-                                    fontSize: "34px",
+                                    fontSize: "38px",
                                 }}
                             >
                                 {displayName}
@@ -98,15 +100,15 @@ export async function GET(request: Request) {
                                         position: "relative",
                                     }}
                                 >
-                                    {" "}
                                     @{title}
                                 </span>
                             </p>
                             <p
                                 style={{
                                     position: "relative",
-                                    fontSize: "30px",
+                                    fontSize: "36px",
                                     color: "white",
+                                    whiteSpace: "pre-line",
                                 }}
                             >
                                 {description}
