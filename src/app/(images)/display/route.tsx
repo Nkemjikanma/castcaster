@@ -51,7 +51,7 @@ export async function GET(request: Request) {
                         <div
                             style={{
                                 width: "auto",
-                                height: "60%",
+                                height: "50%",
                                 display: "flex",
                                 position: "relative",
                                 marginRight: "6px",
@@ -75,7 +75,7 @@ export async function GET(request: Request) {
                             style={{
                                 display: "flex",
                                 width: "85%",
-                                height: "60%",
+                                height: "50%",
                                 position: "relative",
                                 flexDirection: "column",
                                 margin: "0",
