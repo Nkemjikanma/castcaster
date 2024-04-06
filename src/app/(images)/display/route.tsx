@@ -38,8 +38,8 @@ export async function GET(request: Request) {
                             display: "flex",
                             flexDirection: "row",
                             gap: "3px",
-                            height: "90%",
-                            width: "90%",
+                            height: "100%",
+                            width: "100%",
                             backgroundImage:
                                 "linear-gradient(to bottom,  #16101E, #1F162B)",
                             padding: "5px 10px",
@@ -82,7 +82,7 @@ export async function GET(request: Request) {
                                 flexDirection: "column",
                                 border: "2px solid blue",
                                 margin: "0",
-                                alignItems: "center",
+                                justifyContent: "center",
                             }}
                         >
                             <p
