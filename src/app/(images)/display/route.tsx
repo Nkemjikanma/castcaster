@@ -73,11 +73,12 @@ export async function GET(request: Request) {
                             style={{
                                 display: "flex",
                                 width: "85%",
-                                height: "auto",
+                                height: "60%",
                                 position: "relative",
                                 flexDirection: "column",
                                 margin: "0",
                                 justifyContent: "center",
+                                border: "2px solid blue",
                             }}
                         >
                             <p
