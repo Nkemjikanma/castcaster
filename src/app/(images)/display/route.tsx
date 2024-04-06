@@ -29,6 +29,7 @@ export async function GET(request: Request) {
                         padding: "30px",
                         margin: "0",
                         justifyContent: "center",
+                        alignItems: "center",
                     }}
                 >
                     <div
@@ -63,8 +64,8 @@ export async function GET(request: Request) {
                                     position: "relative",
                                     display: "flex",
                                     borderRadius: "50%",
-                                    width: "80px",
-                                    height: "80px",
+                                    width: "150px",
+                                    height: "150px",
                                     backgroundColor: "orange",
                                     border: "1px solid white",
                                 }}
@@ -87,7 +88,7 @@ export async function GET(request: Request) {
                                     position: "relative",
                                     color: "white",
                                     fontWeight: "500",
-                                    fontSize: "42px",
+                                    fontSize: "34px",
                                 }}
                             >
                                 {displayName}
@@ -104,7 +105,7 @@ export async function GET(request: Request) {
                             <p
                                 style={{
                                     position: "relative",
-                                    fontSize: "38px",
+                                    fontSize: "30px",
                                     color: "white",
                                 }}
                             >
