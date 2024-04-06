@@ -22,80 +22,95 @@ export async function GET(request: Request) {
                     style={{
                         position: "relative",
                         display: "flex",
-                        flexDirection: "row",
-                        gap: "3px",
                         height: "100%",
                         width: "100%",
                         backgroundImage:
                             "linear-gradient(to bottom,  #16101E, #1F162B)",
-                        padding: "5px 10px",
+                        padding: "30px",
                         margin: "0",
-                        boxSizing: "border-box",
-                        border: "2px solid green",
+                        justifyContent: "center",
                     }}
                 >
-                    {/* Profile pciture wrapper logo*/}
                     <div
                         style={{
-                            width: "auto",
-                            display: "flex",
                             position: "relative",
-                            border: "2px solid yellow",
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "3px",
+                            height: "90%",
+                            width: "90%",
+                            backgroundImage:
+                                "linear-gradient(to bottom,  #16101E, #1F162B)",
+                            padding: "5px 10px",
+                            margin: "0",
+                            boxSizing: "border-box",
+                            border: "2px solid green",
                         }}
                     >
-                        {/* Profile picture */}
+                        {" "}
+                        {/* Profile pciture wrapper logo*/}
                         <div
                             style={{
-                                position: "relative",
+                                width: "auto",
                                 display: "flex",
-                                borderRadius: "50%",
-                                width: "80px",
-                                height: "80px",
-                                backgroundColor: "orange",
-                                border: "1px solid white",
-                            }}
-                        ></div>
-                    </div>
-
-                    {/*Body wrapper*/}
-                    <div
-                        style={{
-                            display: "flex",
-                            width: "auto",
-                            height: "auto",
-                            position: "relative",
-                            flexDirection: "column",
-                            border: "2px solid blue",
-                        }}
-                    >
-                        <p
-                            style={{
                                 position: "relative",
-                                color: "white",
-                                fontWeight: "500",
-                                fontSize: "42px",
+                                border: "2px solid yellow",
                             }}
                         >
-                            {displayName}
-                            <span
+                            {/* Profile picture */}
+                            <div
                                 style={{
-                                    color: "gray",
                                     position: "relative",
+                                    display: "flex",
+                                    borderRadius: "50%",
+                                    width: "80px",
+                                    height: "80px",
+                                    backgroundColor: "orange",
+                                    border: "1px solid white",
+                                }}
+                            ></div>
+                        </div>
+                        {/*Body wrapper*/}
+                        <div
+                            style={{
+                                display: "flex",
+                                width: "85%",
+                                height: "auto",
+                                position: "relative",
+                                flexDirection: "column",
+                                border: "2px solid blue",
+                                margin: "0",
+                            }}
+                        >
+                            <p
+                                style={{
+                                    position: "relative",
+                                    color: "white",
+                                    fontWeight: "500",
+                                    fontSize: "42px",
                                 }}
                             >
-                                {" "}
-                                @{title}
-                            </span>
-                        </p>
-                        <p
-                            style={{
-                                position: "relative",
-                                fontSize: "38px",
-                                color: "white",
-                            }}
-                        >
-                            {description}
-                        </p>
+                                {displayName}
+                                <span
+                                    style={{
+                                        color: "gray",
+                                        position: "relative",
+                                    }}
+                                >
+                                    {" "}
+                                    @{title}
+                                </span>
+                            </p>
+                            <p
+                                style={{
+                                    position: "relative",
+                                    fontSize: "38px",
+                                    color: "white",
+                                }}
+                            >
+                                {description}
+                            </p>
+                        </div>
                     </div>
                 </div>
             ),
