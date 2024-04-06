@@ -80,7 +80,6 @@ export async function GET(request: Request) {
                                 flexDirection: "column",
                                 margin: "0",
                                 justifyContent: "center",
-                                border: "2px solid blue",
                             }}
                         >
                             <p
