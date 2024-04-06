@@ -24,7 +24,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 },
 
                 input: {
-                    text: "Enter username or fid",
+                    text: "Enter username or fid to generate",
                 },
                 postUrl: "https://castcaster.vercel.app/api/cast",
             }),

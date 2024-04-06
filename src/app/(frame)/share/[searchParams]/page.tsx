@@ -28,9 +28,9 @@ export default function Page({ params }: SharePageProps) {
                 />
                 <meta
                     name="fc:frame:post_url"
-                    content={`${process.env.BASE_URL}/api/cast`}
+                    content={`${process.env.BASE_URL}`}
                 />
-                <meta name="fc:frame:button:1" content="Generate cast" />
+                <meta name="fc:frame:button:1" content="Generate a cast" />
                 <meta name="fc:frame:button:1:action" content="post" />
             </head>
         </html>

@@ -22,9 +22,8 @@ export async function GET(request: Request) {
                     style={{
                         position: "relative",
                         display: "flex",
-                        msFlexDirection: "row",
-                        WebkitFlexDirection: "row",
-                        gap: "8px",
+                        flexDirection: "row",
+                        gap: "3px",
                         height: "100%",
                         width: "100%",
                         alignItems: "center",
@@ -32,6 +31,8 @@ export async function GET(request: Request) {
                         backgroundImage:
                             "linear-gradient(to bottom,  #16101E, #1F162B)",
                         padding: "5px 10px",
+                        margin: "0",
+                        boxSizing: "border-box",
                     }}
                 >
                     {/* Profile pciture wrapper logo*/}
@@ -49,10 +50,10 @@ export async function GET(request: Request) {
                                 position: "relative",
                                 display: "flex",
                                 borderRadius: "50%",
-                                width: "70px",
-                                height: "70px",
+                                width: "80px",
+                                height: "80px",
                                 backgroundColor: "orange",
-                                border: "2px solid white",
+                                border: "1px solid white",
                             }}
                         ></div>
                     </div>
