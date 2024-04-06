@@ -54,7 +54,8 @@ export async function GET(request: Request) {
                                 height: "50%",
                                 display: "flex",
                                 position: "relative",
-                                marginRight: "6px",
+                                marginRight: "10px",
+                                marginTop: "10px",
                             }}
                         >
                             {/* Profile picture */}
@@ -87,7 +88,7 @@ export async function GET(request: Request) {
                                     position: "relative",
                                     color: "white",
                                     fontWeight: "500",
-                                    fontSize: "38px",
+                                    fontSize: "36px",
                                 }}
                             >
                                 {displayName}
@@ -104,7 +105,7 @@ export async function GET(request: Request) {
                             <p
                                 style={{
                                     position: "relative",
-                                    fontSize: "36px",
+                                    fontSize: "34px",
                                     color: "white",
                                     whiteSpace: "pre-line",
                                     wordWrap: "break-word",
