@@ -43,12 +43,15 @@ export async function GET(request: Request) {
                             padding: "5px 10px",
                             margin: "0",
                             boxSizing: "border-box",
+                            justifyContent: "center",
+                            alignItems: "center",
                         }}
                     >
                         {/* Profile pciture wrapper logo*/}
                         <div
                             style={{
                                 width: "auto",
+                                height: "60%",
                                 display: "flex",
                                 position: "relative",
                                 marginRight: "6px",
@@ -64,7 +67,6 @@ export async function GET(request: Request) {
                                     height: "110px",
                                     backgroundColor: "orange",
                                     border: "1px solid white",
-                                    marginTop: "140px",
                                 }}
                             ></div>
                         </div>
