@@ -106,9 +106,3 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 }
 
 export const dynamic = "force-dynamic";
-
-// -----------------------------------------------------------------------------
-// Next.js config
-// -----------------------------------------------------------------------------
-
-export const maxDuration = 300;
