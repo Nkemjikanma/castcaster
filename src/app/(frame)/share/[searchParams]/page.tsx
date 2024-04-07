@@ -18,13 +18,13 @@ export default function Page({ params }: SharePageProps) {
                 <meta property="og:title" content={searchParams.title} />
                 <meta
                     property="og:image"
-                    content={`http://castcaster.vercel.app/share?${searchParams}`}
+                    content={`https://castcaster.vercel.app/display?${searchParams}`}
                 />
                 <meta name="fc:frame" content="vNext" />
                 <meta name="fc:frame:image:aspect_ratio" content="1:1" />
                 <meta
                     name="fc:frame:image"
-                    content={`http://castcaster.vercel.app/share?${searchParams}`}
+                    content={`https://castcaster.vercel.app/display?${searchParams}`}
                 />
                 <meta
                     name="fc:frame:post_url"
