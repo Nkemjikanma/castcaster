@@ -32,7 +32,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 status: 200,
                 headers: {
                     "Content-Type": "text/html",
-                    "Cache-Control": "public, max-age=0, must-revalidate",
+                    "Cache-Control": "public, max-age=60, must-revalidate",
                 },
             },
         );
@@ -66,7 +66,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                 status: 200,
                 headers: {
                     "Content-Type": "text/html",
-                    "Cache-Control": "public, max-age=0, must-revalidate",
+                    "Cache-Control": "public, max-age=60, must-revalidate",
                 },
             },
         );
@@ -99,10 +99,16 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
             status: 200,
             headers: {
                 "Content-Type": "text/html",
-                "Cache-Control": "public, max-age=0, must-revalidate",
+                "Cache-Control": "public, max-age=60, must-revalidate",
             },
         },
     );
 }
 
 export const dynamic = "force-dynamic";
+
+// -----------------------------------------------------------------------------
+// Next.js config
+// -----------------------------------------------------------------------------
+
+export const maxDuration = 300;
