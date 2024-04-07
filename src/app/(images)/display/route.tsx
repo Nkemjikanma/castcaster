@@ -104,6 +104,7 @@ export async function GET(request: Request) {
                             </p>
                             <p
                                 style={{
+                                    maxWidth: "100%",
                                     position: "relative",
                                     fontSize: "34px",
                                     color: "white",
