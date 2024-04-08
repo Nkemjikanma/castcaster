@@ -20,12 +20,12 @@ export default function Page({ params }: SharePageProps) {
                 <meta property="og:title" content={searchParams.title} />
                 <meta
                     property="og:image"
-                    content={`https://castcaster.vercel.app/api/display?${searchParams}`}
+                    content={`https://castcaster.vercel.app/api/display${searchParams}`}
                 />
                 <meta name="fc:frame" content="vNext" />
                 <meta
                     name="fc:frame:image"
-                    content={`https://castcaster.vercel.app/api/display?${searchParams}`}
+                    content={`https://castcaster.vercel.app/api/display${searchParams}`}
                 />
                 <meta
                     name="fc:frame:post_url"
