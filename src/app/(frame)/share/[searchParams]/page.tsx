@@ -16,7 +16,7 @@ export default function Page({ params }: SharePageProps) {
     const htmlOutput = getFrameHtmlResponse({
         ogTitle: searchParams.title,
         ogDescription: searchParams.description,
-        image: `https://castcaster.vercel.app/display?${searchParams}`,
+        image: `https://castcaster.vercel.app/api/display?${searchParams}`,
         buttons: [
             {
                 label: "Generate a cast",

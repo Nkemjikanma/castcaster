@@ -5,7 +5,7 @@ import { formatCasts, getCasts, openAi, retrieveFId } from "@/utils/utils";
 export async function POST(req: NextRequest): Promise<NextResponse> {
     const body: FrameRequest = await req.json();
     const { untrustedData } = body;
-    const fid = untrustedData.fid;
+    // const fid = untrustedData.fid;
 
     if (!untrustedData.inputText) {
         const searchParams = new URLSearchParams({
@@ -85,7 +85,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     return new NextResponse(
         getFrameHtmlResponse({
             image: {
-                src: `https://castcaster.vercel.app/display?${searchParams}`,
+                src: `https://castcaster.vercel.app/api/display?${searchParams}`,
             },
             buttons: [
                 {

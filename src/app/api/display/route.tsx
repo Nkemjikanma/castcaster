@@ -1,12 +1,13 @@
 import { ImageResponse } from "next/og";
+import type { NextRequest } from "next/server";
 // App router includes @vercel/og.
 // No need to install it.
 
 export const runtime = "edge";
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
     try {
-        const { searchParams } = new URL(request.url);
+        const { searchParams } = new URL(request.nextUrl);
 
         // ?title=<title>
         const title = searchParams.get("title")?.slice(0, 100);
