@@ -13,19 +13,27 @@ interface SharePageProps {
 export default function Page({ params }: SharePageProps) {
     const { searchParams } = params;
 
-    const htmlOutput = getFrameHtmlResponse({
-        ogTitle: searchParams.title,
-        ogDescription: searchParams.description,
-        image: `https://castcaster.vercel.app/api/display?${searchParams}`,
-        buttons: [
-            {
-                label: "Generate a cast",
-                action: "post",
-                target: `${process.env.NEXT_PUBLIC_HOST_URL}`,
-            },
-        ],
-        postUrl: `${process.env.NEXT_PUBLIC_HOST_URL}`,
-    });
-
-    return { htmlOutput };
+    return (
+        <html>
+            <head>
+                <title>{searchParams.title}</title>
+                <meta property="og:title" content={searchParams.title} />
+                <meta
+                    property="og:image"
+                    content={`https://castcaster.vercel.app/api/display?${searchParams}`}
+                />
+                <meta name="fc:frame" content="vNext" />
+                <meta
+                    name="fc:frame:image"
+                    content={`https://castcaster.vercel.app/api/display?${searchParams}`}
+                />
+                <meta
+                    name="fc:frame:post_url"
+                    content={`${process.env.NEXT_PUBLIC_HOST_URL}`}
+                />
+                <meta name="fc:frame:button:1" content="Generate a cast" />
+                <meta name="fc:frame:button:1:action" content="post" />
+            </head>
+        </html>
+    );
 }
