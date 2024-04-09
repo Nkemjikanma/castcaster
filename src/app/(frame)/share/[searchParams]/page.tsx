@@ -1,4 +1,4 @@
-import { getFrameHtmlResponse } from "@coinbase/onchainkit";
+import { useSearchParams } from "next/navigation";
 
 interface SharePageProps {
     params: {
@@ -11,21 +11,31 @@ interface SharePageProps {
 }
 
 export default function Page({ params }: SharePageProps) {
-    const { searchParams } = params;
+    const searchParams = useSearchParams();
+
+    const title = searchParams.get("title") || "CastCaster";
+    const description = searchParams.get("description") || "Generated cast";
+    const displayName = searchParams.get("displayName") || "CastCaster";
+
+    const renderParams = new URLSearchParams({
+        title,
+        description,
+        displayName,
+    });
 
     return (
         <html>
             <head>
-                <title>{searchParams.title}</title>
-                <meta property="og:title" content={searchParams.title} />
+                <title>{title}</title>
+                <meta property="og:title" content={title} />
                 <meta
                     property="og:image"
-                    content={`https://castcaster.vercel.app/api/display?${searchParams}`}
+                    content={`https://castcaster.vercel.app/api/display?${renderParams}`}
                 />
                 <meta name="fc:frame" content="vNext" />
                 <meta
                     name="fc:frame:image"
-                    content={`https://castcaster.vercel.app/api/display?${searchParams}`}
+                    content={`https://castcaster.vercel.app/api/display?${renderParams}`}
                 />
                 <meta
                     name="fc:frame:post_url"
